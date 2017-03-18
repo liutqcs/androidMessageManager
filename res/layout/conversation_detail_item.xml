@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="5dip" >
+
+    <TableLayout
+        android:id="@+id/tl_conversation_detail_item_receive"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="0"
+        android:visibility="gone" >
+
+        <TableRow android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_conversation_detail_item_receive_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/receive_msg_bubble"
+                android:text="哈哈, 你喝多了"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/tv_conversation_detail_item_receive_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dip"
+                android:layout_marginLeft="5dip"
+                android:text="1990-09-09"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/tl_conversation_detail_item_send"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="1"
+        android:visibility="gone" >
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:gravity="right" >
+
+            <TextView
+                android:id="@+id/tv_conversation_detail_item_send_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="5dip"
+                android:layout_marginRight="5dip"
+                android:text="1990-09-09"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_conversation_detail_item_send_body"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/send_msg_bubble"
+                android:text="哈哈, 你喝多了哈哈, 你喝多了哈哈, 你喝多了哈哈, 你喝多了哈哈, 你喝多了哈哈, 你喝多了哈哈, 你喝多了"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

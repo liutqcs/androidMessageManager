@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dip" >
+
+    <CheckBox
+        android:id="@+id/cb_conversation_item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:clickable="false"
+        android:focusable="false"
+        android:enabled="false"
+        android:layout_centerVertical="true"
+        android:button="@drawable/common_checkbox_bg" />
+
+    <ImageView
+        android:id="@+id/iv_conversation_item_icon"
+        android:layout_width="52dip"
+        android:layout_height="52dip"
+        android:layout_toRightOf="@id/cb_conversation_item"
+        android:background="@drawable/ic_contact_picture" />
+
+    <TextView
+        android:id="@+id/tv_conversation_item_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@id/iv_conversation_item_icon"
+        android:text="凤姐(10)"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_conversation_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="11:10"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_conversation_item_body"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_conversation_item_name"
+        android:layout_below="@id/tv_conversation_item_name"
+        android:layout_marginTop="5dip"
+        android:singleLine="true"
+        android:text="asdlkfjasd"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp" />
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="20dip" >
+
+    <ImageView
+        android:id="@+id/iv_folder_item_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/a_f_draft" />
+
+    <TextView
+        android:id="@+id/tv_folder_item_type"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_weight="1"
+        android:text="收件箱"
+        android:textColor="#660000"
+        android:textSize="23sp" />
+
+    <TextView
+        android:id="@+id/tv_folder_item_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#660000"
+        android:textSize="23sp" />
+
+</LinearLayout>

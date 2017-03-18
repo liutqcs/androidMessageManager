@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dip" >
+
+    <ImageView
+        android:id="@+id/iv_sms_detail_icon"
+        android:layout_width="52dip"
+        android:layout_height="52dip"
+        android:background="@drawable/ic_unknow_contact_picture" />
+
+    <TextView
+        android:id="@+id/tv_sms_detail_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dip"
+        android:layout_marginTop="3dip"
+        android:layout_toRightOf="@id/iv_sms_detail_icon"
+        android:text="暴强"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_sms_detail_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/tv_sms_detail_name"
+        android:layout_below="@id/tv_sms_detail_name"
+        android:layout_marginTop="3dip"
+        android:text="95556"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_sms_detail_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iv_sms_detail_icon"
+        android:layout_marginTop="3dip"
+        android:text="接收于: "
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_sms_detail_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/tv_sms_detail_type"
+        android:layout_toRightOf="@id/tv_sms_detail_type"
+        android:text="1990-09-09"
+        android:textColor="@android:color/black"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/tv_sms_detail_type" >
+
+        <TextView
+            android:id="@+id/tv_sms_detail_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+    </ScrollView>
+
+</RelativeLayout>
